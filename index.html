@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background: #63738A;
+        }
+        
+        .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 15%;
+        background: white;
+        height: 33rem;
+        }
+        form {
+        margin-top: 20px;
+        }
+        label {
+        display: block;
+        margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 30px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 5px;
+        }
+        input[type="submit"]:hover {
+        background-color: #f0f5f0;
+        color: #4CAF50;
+        }
+        
+        .inline-block {
+        display: inline-block;
+        width: calc(50% - 5px);
+        }
+        .inline-block + .inline-block {
+        margin-left: 10px;
+        }
+
+        input[type="text"]:nth-child(1) {
+            margin-left: 10px;
+        }
+
+        input[type="text"]:nth-child(2) {
+            margin-right: 10px;
+        }
+
+        #name {
+        display: flex;
+        }
+
+        #check {
+        display: flex;
+        align-items: start;
+        padding-bottom: 15px;
+        }
+
+    </style>
+    </head>
+    <body>
+    <div class="container">
+        <h1 align="center">Registration Form</h1>
+        <p align="center">Create your account. It only takes a minute.</p>
+        <form>
+        <div id="name">
+            <label for="first_name"></label>
+            <input type="text" id="first_name" name="first_name" class="inline-block" placeholder="First Name" required>
+
+            <label for="last_name"></label>
+            <input type="text" id="last_name" name="last_name" class="inline-block" placeholder="Last Name" required>
+        </div>
+
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+
+        <label for="password"></label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+
+        <label for="confirm_password"></label>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+
+        <div id="check">
+            <input type="checkbox">&nbsp; I accept the <font color="green">Terms of Use</font>&nbsp; & &nbsp;<font color="green">Privacy Policy</font>
+        </div>
+            
+        <input type="submit" value="Register Now">
+        </form>
+
+    </div>
+    <P align="center"><font color="white
+        ">Already have an account?<a href="">Sign In</a></font></P>
+    </body>
+</html>
+    
